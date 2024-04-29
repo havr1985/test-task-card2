@@ -4,9 +4,7 @@ import { RaitingStars } from "./RaitingStars";
 import { FormBuy } from "./FormBuy";
 import { Features } from "./Features";
 
-const {title, price, raiting, color, features } = card;
-
-
+const { title, price, raiting, color, features } = card;
 
 export const CardMixer = () => {
   return (
@@ -18,7 +16,7 @@ export const CardMixer = () => {
             <h1 className=" text-3xl font-bold">{title}</h1>
             <p className=" text-3xl">${price}</p>
           </div>
-          <div className=" mt-4 flex gap-4" >
+          <div className=" mt-4 flex gap-4">
             <RaitingStars raiting={raiting} />
             <p>{raiting}</p>
           </div>
@@ -32,4 +30,4 @@ export const CardMixer = () => {
       </div>
     </div>
   );
-}
+};

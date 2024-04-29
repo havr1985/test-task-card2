@@ -1,10 +1,4 @@
-import {
-  Table,
-  TableBody,
-  
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
 import { FC } from "react";
 import { Separator } from "./ui/separator";
@@ -26,8 +20,8 @@ interface IFeaturesProps {
 export const Features: FC<IFeaturesProps> = ({ features }) => {
   return (
     <>
-          <div className=" text-xl font-bold mb-5">Features</div>
-          <Separator/>
+      <div className=" text-xl font-bold mb-5">Features</div>
+      <Separator />
       <Table>
         <TableBody className=" text-gray-500">
           <TableRow>
@@ -61,8 +55,10 @@ export const Features: FC<IFeaturesProps> = ({ features }) => {
             <TableCell>{features.bowl}</TableCell>
           </TableRow>
         </TableBody>
-          </Table>
-          <a href="#" className=" underline decoration-solid font-bold">ALL FEATURES</a>
+      </Table>
+      <a href="#" className=" underline decoration-solid font-bold">
+        ALL FEATURES
+      </a>
     </>
   );
 };

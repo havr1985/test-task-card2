@@ -1,15 +1,12 @@
-
-import './App.css'
-import { CardMixer } from './components/CardMixer'
+import "./App.css";
+import { CardMixer } from "./components/CardMixer";
 
 function App() {
-  
-
   return (
     <div>
-      <CardMixer/>
+      <CardMixer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

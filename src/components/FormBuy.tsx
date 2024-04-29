@@ -10,7 +10,6 @@ interface IFormBuy {
 }
 
 export const FormBuy: FC<IFormBuy> = ({ color }) => {
-  
   const formik = useFormik({
     initialValues: {
       color: "",
@@ -26,7 +25,7 @@ export const FormBuy: FC<IFormBuy> = ({ color }) => {
       <RadioGroup defaultValue="black" className=" flex">
         {color.map((item, idx) => (
           <div key={idx} className="flex items-center space-x-2 ">
-            <Square color={item} fill={item } size={40}/>
+            <Square color={item} fill={item} size={40} />
             <RadioGroupItem value={item} id={item} />
           </div>
         ))}
