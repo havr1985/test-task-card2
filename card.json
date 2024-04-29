@@ -1,0 +1,16 @@
+{
+    "title": "Mixer Smeg SMF03DGEU",
+    "price": 1190.99,
+    "raiting": 4.8,
+    "color": ["black", "red", "pink", "blue"],
+    "imageUrl": ["https://bucket-smeg.4flow.cloud/OBJECTS/JPG%2072%20dpi/SMF03BLEU.jpg", "https://smeg-partner.com.ua/images/catalog/108697.jpg", "https://smg-store.com.ua/image/cache/catalog/products/2019/SMF03CREU-1-800x800.jpg"],
+    "features": {
+        "power": "800 W",
+        "motion": "yes",
+        "weight": "9.5kg",
+        "country": "Italy",
+        "model": "smf03dgeu",
+        "cord": "1m",
+        "bowl": "4.8I"
+    }
+}
