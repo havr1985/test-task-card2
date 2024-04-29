@@ -3,13 +3,14 @@ import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 
 import { FC } from "react";
 import { Button } from "./ui/button";
+import { Square } from "lucide-react";
 
 interface IFormBuy {
   color: string[];
 }
 
 export const FormBuy: FC<IFormBuy> = ({ color }) => {
-  console.log(color[0]);
+  
   const formik = useFormik({
     initialValues: {
       color: "",
@@ -25,7 +26,7 @@ export const FormBuy: FC<IFormBuy> = ({ color }) => {
       <RadioGroup defaultValue="black" className=" flex">
         {color.map((item, idx) => (
           <div key={idx} className="flex items-center space-x-2 ">
-            <div className={`w-8 h-8 bg-[${item}] rounded-md`}></div>
+            <Square color={item} fill={item } size={40}/>
             <RadioGroupItem value={item} id={item} />
           </div>
         ))}
@@ -39,7 +40,9 @@ export const FormBuy: FC<IFormBuy> = ({ color }) => {
           onChange={formik.handleChange}
           value={formik.values.count}
         />
-        <Button type="submit" size="lg">ADD TO BAG</Button>
+        <Button type="submit" size="lg">
+          ADD TO BAG
+        </Button>
       </div>
     </form>
   );
