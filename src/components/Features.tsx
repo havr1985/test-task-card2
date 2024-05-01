@@ -1,27 +1,17 @@
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
-import { FC } from "react";
-import { Separator } from "./ui/separator";
 
-type TFeatures = {
-  power: string;
-  motion: string;
-  weight: string;
-  country: string;
-  model: string;
-  cord: string;
-  bowl: string;
-};
 
-interface IFeaturesProps {
-  features: TFeatures;
-}
+import card from "../../card.json";
 
-export const Features: FC<IFeaturesProps> = ({ features }) => {
+const { features } = card
+
+
+
+export const Features = () => {
   return (
     <>
-      <div className=" text-xl font-bold mb-5">Features</div>
-      <Separator />
+      
       <Table>
         <TableBody className=" text-gray-500">
           <TableRow>

@@ -2,9 +2,9 @@ import { CarouselImg } from "./CarouselImg";
 import card from "../../card.json";
 import { RaitingStars } from "./RaitingStars";
 import { FormBuy } from "./FormBuy";
-import { Features } from "./Features";
+import { NavButtons } from "./NavButtons";
 
-const { title, price, raiting, color, features } = card;
+const { title, price, raiting, color } = card;
 
 export const CardMixer = () => {
   return (
@@ -24,7 +24,7 @@ export const CardMixer = () => {
             <FormBuy color={color} />
           </div>
           <div className=" mt-10">
-            <Features features={features} />
+            <NavButtons />
           </div>
         </div>
       </div>
